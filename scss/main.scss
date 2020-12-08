@@ -25,6 +25,7 @@ body {
         bottom: 0;
         left: 0;
         right: 0;
+        height: 60em;
 
         @media screen and (max-width: 992px) {
             opacity: 0.4;
@@ -65,7 +66,7 @@ body {
                     &:hover {
                         color: darken($tertiaryColor, 30%);
                     }
-
+                   
                 }
 
                 .Sign-up-button {
@@ -77,12 +78,31 @@ body {
                     padding-right: 1.5em;
 
                 }
+                @media screen and (max-width:992px){
+                    .nav-link{
+                        color: $textColor;
+                        &:hover {
+                            color: white;
+                        }
+                    }
+                    .Sign-up-button{
+                        background-color: $primaryColor;
+                        color: white;
+                        border-radius: 2em;
+                        border: 0;
+                        padding-left: 1.5em;
+                        padding-right: 1.5em;
+                    }
+                    
+                }
+
             }
         }
     }
 
     @media screen and (max-width: 992px) {
         margin-top: -1em;
+        
     }
 }
 

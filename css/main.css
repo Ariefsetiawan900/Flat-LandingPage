@@ -1,7 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500;700&display=swap");
 body {
   font-family: 'Ubuntu', sans-serif;
-  height: 60em;
+  min-height: 60em;
 }
 
 body::before {
@@ -57,6 +57,10 @@ body::before {
   padding-right: 1.5em;
 }
 
+.custom-nav #navbarNav .navbar-nav .nav-item .Sign-up-button:hover {
+  opacity: 0.8;
+}
+
 @media screen and (max-width: 992px) {
   .custom-nav #navbarNav .navbar-nav .nav-item .nav-link {
     color: #363767;
@@ -67,10 +71,12 @@ body::before {
   .custom-nav #navbarNav .navbar-nav .nav-item .Sign-up-button {
     background-color: #EB9639;
     color: white;
-    border-radius: 2em;
-    border: 0;
-    padding-left: 1.5em;
-    padding-right: 1.5em;
+    border: 1px solid transparent;
+  }
+  .custom-nav #navbarNav .navbar-nav .nav-item .Sign-up-button:hover {
+    color: #3844A2;
+    background-color: white;
+    border: 1px solid #EB9639;
   }
 }
 
@@ -107,6 +113,7 @@ body::before {
   margin-top: 2.2em;
   -webkit-transition: 0.5s ease;
   transition: 0.5s ease;
+  border: 1px solid transparent;
 }
 
 .custom-section .button-getStarted:hover {

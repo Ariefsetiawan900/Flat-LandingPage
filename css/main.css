@@ -63,7 +63,7 @@ body::before {
 
 @media screen and (max-width: 992px) {
   .custom-nav #navbarNav .navbar-nav .nav-item .nav-link {
-    color: #363767;
+    color: #3844A2;
   }
   .custom-nav #navbarNav .navbar-nav .nav-item .nav-link:hover {
     color: white;
@@ -155,5 +155,9 @@ body::before {
             flex-direction: column;
     margin-top: 1em;
   }
+}
+
+.credit {
+  margin-top: 15em;
 }
 /*# sourceMappingURL=main.css.map */

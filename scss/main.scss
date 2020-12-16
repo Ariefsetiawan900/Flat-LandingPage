@@ -1,36 +1,6 @@
-// Font
-@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500;700&display=swap');
-
-// Variables
-$primaryColor : #EB9639;
-$secondaryColor : #2C2A55;
-$tertiaryColor : #3844A2;
-$textColor : #363767;
-
-// Mixins
-@mixin customBtn($Button) {
-    @if $Button==btnSignUp {
-        background-color: white;
-        color: $textColor;
-        border-radius: 2em;
-        border: 0;
-        padding-left: 1.5em;
-        padding-right: 1.5em;
-    }
-
-    @if $Button==btnGet {
-        display: inline-block;
-        color: white;
-        background-color: $primaryColor;
-        border-radius: 2em;
-        padding: 0.5em 2em;
-        text-decoration: none;
-        margin-top: 2.2em;
-        transition: 0.5s ease;
-        // margin-right: 1.3em;
-        border: 1px solid transparent;
-    }
-}
+@import 'font';
+@import 'variables';
+@import 'mixin';
 
 // Styles
 
@@ -98,12 +68,6 @@ body {
 
                 .Sign-up-button {
                     @include customBtn(btnSignUp);
-                    // background-color: white;
-                    // color: $textColor;
-                    // border-radius: 2em;
-                    // border: 0;
-                    // padding-left: 1.5em;
-                    // padding-right: 1.5em;
 
                     &:hover {
                         opacity: 0.8;
@@ -122,13 +86,8 @@ body {
                     }
 
                     .Sign-up-button {
-                        // @include customBtn(btnSignUp);
                         background-color: $primaryColor;
                         color: white;
-                        // border-radius: 2em;
-                        // border: 0;
-                        // padding-left: 1.5em;
-                        // padding-right: 1.5em;
                         border: 1px solid transparent;
 
                         &:hover {
@@ -137,9 +96,7 @@ body {
                             border: 1px solid $primaryColor
                         }
                     }
-
                 }
-
             }
         }
     }
@@ -210,9 +167,6 @@ body {
             margin-top: 1em;
 
         }
-
-        // height: 50em;
-
     }
 
 }
